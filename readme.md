@@ -2,7 +2,7 @@
 
 Meta Manager is an SEO tool that is used to improve the SEO of a website or specific page by adding recommended meta tags to your application.
 
-[![GitHub license](https://img.shields.io/github/license/bowphp/meta-manager.svg)](https://github.com/bowphp/meta-manager/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/bowphp/meta-manager.svg)](https://github.com/bowphp/meta-manager/issues) [![CodeFactor](https://www.codefactor.io/repository/github/bowphp/meta-manager/badge)](https://www.codefactor.io/repository/github/bowphp/meta-manager) [![Stable](https://poser.pugx.org/bowphp/meta-manager/v/stable.svg)](https://poser.pugx.org/bowphp/meta-manager/v/stable.svg) [![Download](https://poser.pugx.org/bowphp/meta-manager/d/total.svg)](https://poser.pugx.org/bowphp/meta-manager/d/total.svg) ![Twitter](https://img.shields.io/twitter/url/https/github.com/bowphp/meta-manager.svg?style=social)
+[![GitHub license](https://img.shields.io/github/license/bowphp/meta-manager.svg)](https://github.com/bowphp/meta-manager/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/bowphp/meta-manager.svg)](https://github.com/bowphp/meta-manager/issues) [![CodeFactor](https://www.codefactor.io/repository/github/bowphp/meta-manager/badge)](https://www.codefactor.io/repository/github/bowphp/meta-manager) ![Twitter](https://img.shields.io/twitter/url/https/github.com/bowphp/meta-manager.svg?style=social)
 
 ## SEO Features
 
