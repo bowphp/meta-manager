@@ -96,7 +96,6 @@ The above will use the predefined configurations to prefill the generated meta t
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
     #meta([
       'title'  => 'My Example Title',
       'description' => 'This is my example description',
@@ -107,10 +106,6 @@ The above will use the predefined configurations to prefill the generated meta t
 </body>
 </html>
 ```
-
-## Forkers
-
-[![Forkers repo roster for @bowphp/meta-manager](https://reporoster.com/forks/bowphp/meta-manager)](https://github.com/bowphp/meta-manager/network/members)
 
 ## Maintainers
 
