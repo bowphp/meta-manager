@@ -1,0 +1,24 @@
+{
+    "name": "bowphp/meta-manager",
+    "description": "Meta Manager is an SEO tool that is used to improve SEO of a Bowphp web application by adding recommended meta tags to your web pages.",
+    "type": "library",
+    "require": {
+        "bowphp/framework": "5.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.1.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bow\\MetaManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Franck DAKIA",
+            "email": "dakiafranck@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
