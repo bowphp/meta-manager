@@ -36,7 +36,7 @@ class MetaManagerConfiguration extends Configuration
             throw new \ErrorException("Please use bowphp/tintin as the default view engine");
         }
 
-        $tintin->directive('meta', function (array $attribute = []) use ($tintin) {
+        $tintin->define('meta', function (array $attribute = []) use ($tintin) {
             return $tintin->renderString(file_get_contents(__DIR__ . '/views/meta.tintin.php'), $attribute);
         });
     }
