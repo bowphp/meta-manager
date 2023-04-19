@@ -27,4 +27,30 @@ class MetaManagerTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals(trim($output), '<?php echo $__tintin->getCompiler()->_____executeCustomDirectory("meta");');
     }
+
+    public function testCompileTheSpecialDirectiveStructureWithParam()
+    {
+        $kernel = KernelTesting::configure(__DIR__."/config");
+        $kernel->boot();
+
+        /**@var Tintin */
+        $tintin = View::getInstance()->getEngine();
+        $output = $tintin->getCompiler()->compile('%meta(["title" => "Yoo"])');
+
+        $this->assertEquals(trim($output), '<?php echo $__tintin->getCompiler()->_____executeCustomDirectory("meta", ["title" => "Yoo"]);');
+    }
+
+    public function testCompileTheSpecialDirectiveStructureWithParamAndLinebracken()
+    {
+        $kernel = KernelTesting::configure(__DIR__."/config");
+        $kernel->boot();
+
+        /**@var Tintin */
+        $tintin = View::getInstance()->getEngine();
+        $output = $tintin->getCompiler()->compile('%meta([
+            "title" => "Yoo"
+        ])');
+
+        $this->assertEquals(trim($output), '<?php echo $__tintin->getCompiler()->_____executeCustomDirectory("meta", ["title" => "Yoo"]);');
+    }
 }
