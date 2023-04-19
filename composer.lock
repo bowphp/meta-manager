@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bowphp/framework.git",
-                "reference": "e93af58456fa0931fcbcd24b4cde3833470826a4"
+                "reference": "8a990a1d2a918a23cc2dbc06899b502b1e7efc39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bowphp/framework/zipball/e93af58456fa0931fcbcd24b4cde3833470826a4",
-                "reference": "e93af58456fa0931fcbcd24b4cde3833470826a4",
+                "url": "https://api.github.com/repos/bowphp/framework/zipball/8a990a1d2a918a23cc2dbc06899b502b1e7efc39",
+                "reference": "8a990a1d2a918a23cc2dbc06899b502b1e7efc39",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +98,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-12T14:22:05+00:00"
+            "time": "2023-04-19T10:43:56+00:00"
         },
         {
             "name": "bowphp/tintin",

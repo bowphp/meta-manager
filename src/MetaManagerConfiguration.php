@@ -22,17 +22,6 @@ class MetaManagerConfiguration extends Configuration
         );
 
         $config['meta'] = $meta;
-
-        /**@var Tintin */
-        $tintin = View::getInstance()->getEngine();
-
-        if (!$tintin instanceof Tintin) {
-            throw new \ErrorException("Please use bowphp/tintin as the default view engine");
-        }
-
-        $tintin->directive('meta', function(array $attribute) use ($tintin) {
-            return $tintin->renderString(file_get_contents(__DIR__.'/views/meta.tintin.php'), $attribute);
-        });
     }
 
     /**
@@ -40,6 +29,15 @@ class MetaManagerConfiguration extends Configuration
      */
     public function run(): void
     {
-        //
+        /**@var Tintin */
+        $tintin = View::getInstance()->getEngine();
+
+        if (!$tintin instanceof Tintin) {
+            throw new \ErrorException("Please use bowphp/tintin as the default view engine");
+        }
+
+        $tintin->directive('meta', function (array $attribute = []) use ($tintin) {
+            return $tintin->renderString(file_get_contents(__DIR__ . '/views/meta.tintin.php'), $attribute);
+        });
     }
 }
