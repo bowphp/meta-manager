@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b1f6bf28e828220478b401a0a0ecce9",
+    "content-hash": "9b26bc34449a9d9ff904ec4195000c14",
     "packages": [
         {
             "name": "bowphp/framework",
@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bowphp/tintin.git",
-                "reference": "6f188730ddc8a40777806b8055b7517b7c18cdb7"
+                "reference": "7a590e02cdaeaa52d65310af9beded9309fed031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bowphp/tintin/zipball/6f188730ddc8a40777806b8055b7517b7c18cdb7",
-                "reference": "6f188730ddc8a40777806b8055b7517b7c18cdb7",
+                "url": "https://api.github.com/repos/bowphp/tintin/zipball/7a590e02cdaeaa52d65310af9beded9309fed031",
+                "reference": "7a590e02cdaeaa52d65310af9beded9309fed031",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-19T07:42:33+00:00"
+            "time": "2023-04-19T09:54:37+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -2303,16 +2303,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.1.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "05e360c7893c9cb69ebf447d5803b13443a662fc"
+                "reference": "da707f3748773fbffd20289ae039e5e667d6b3a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/05e360c7893c9cb69ebf447d5803b13443a662fc",
-                "reference": "05e360c7893c9cb69ebf447d5803b13443a662fc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/da707f3748773fbffd20289ae039e5e667d6b3a6",
+                "reference": "da707f3748773fbffd20289ae039e5e667d6b3a6",
                 "shasum": ""
             },
             "require": {
@@ -2346,13 +2346,14 @@
             "suggest": {
                 "ext-soap": "To be able to generate mocks based on WSDL files"
             },
+            "default-branch": true,
             "bin": [
                 "phpunit"
             ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.1-dev"
+                    "dev-main": "10.2-dev"
                 }
             },
             "autoload": {
@@ -2384,7 +2385,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.1"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/main"
             },
             "funding": [
                 {
@@ -2400,7 +2401,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-19T06:39:28+00:00"
+            "time": "2023-04-19T06:39:53+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -3394,8 +3395,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bowphp/framework": 20,
-        "phpunit/phpunit": 20
+        "bowphp/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

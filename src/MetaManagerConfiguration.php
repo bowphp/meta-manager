@@ -24,10 +24,14 @@ class MetaManagerConfiguration extends Configuration
         $config['meta'] = $meta;
 
         /**@var Tintin */
-        $template = View::getInstance()->getTemplate();
+        $tintin = View::getInstance()->getEngine();
 
-        $template->directive('meta', function(array $attribute) use ($tempate) {
-            return $tempate->renderString(file_get_contents(__DIR__.'/views/meta.tintin.php'), $attribute);
+        if (!$tintin instanceof Tintin) {
+            throw new \ErrorException("Please use bowphp/tintin as the default view engine");
+        }
+
+        $tintin->directive('meta', function(array $attribute) use ($tintin) {
+            return $tintin->renderString(file_get_contents(__DIR__.'/views/meta.tintin.php'), $attribute);
         });
     }
 

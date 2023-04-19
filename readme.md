@@ -15,7 +15,8 @@ Meta Manager is an SEO tool that is used to improve the SEO of a website or spec
 ## Requirements
 
 * PHP 8.1 and above
-* Bowphp 5.x with Tintin 3.x
+* Bowphp [5.x](https://github.com/bowphp/framework)
+* Tintin [3.x](https://github.com/bowphp/tintin)
 
 ## Steps
 
