@@ -15,6 +15,7 @@ Meta Manager is an SEO tool that is used to improve the SEO of a website or spec
 ## Requirements
 
 * PHP 8.1 and above
+* Bowphp 5.x with Tintin 3.x
 
 ## Steps
 
@@ -27,8 +28,6 @@ Meta Manager is an SEO tool that is used to improve the SEO of a website or spec
 * [License](./#license)
 
 ### Install
-
-**Composer**
 
 Run the following to include this package via Composer
 
@@ -75,14 +74,14 @@ Setup default application meta in `meta.php` config. \(Optional but recommended\
 
 Once the configuration is complete you can then add the below at the meta area of the page you want to include meta tags;
 
-```php
-#meta()
+```t
+%meta()
 ```
 
 The above will use the predefined configurations to prefill the generated meta tags. However, if you chose to define certain options on the fly then you can use the code below.
 
-```php
-#meta([
+```t
+%meta([
     'title'         => 'My Example Title',
     'description'   => 'This is my example description',
     'image'         => 'Url to the image',
@@ -91,12 +90,12 @@ The above will use the predefined configurations to prefill the generated meta t
 
 ## Example
 
-```html
+```t
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    #meta([
+    %meta([
       'title'  => 'My Example Title',
       'description' => 'This is my example description',
       'image'=> '',
@@ -116,4 +115,4 @@ The above will use the predefined configurations to prefill the generated meta t
 
 [papac@bowphp.com](mailto:papac@bowphp.com) - [@papacdev](https://twitter.com/papacdev)
 
-**Please, if there is a bug in the project. Contact me by email or leave me a message on [slack](https://bowphp.slack.com). or [join us on slack](https://join.slack.com/t/bowphp/shared_invite/enQtNzMxOTQ0MTM2ODM5LTQ3MWQ3Mzc1NDFiNDYxMTAyNzBkNDJlMTgwNDJjM2QyMzA2YTk4NDYyN2NiMzM0YTZmNjU1YjBhNmJjZThiM2Q)**
+**Please, if there is a bug in the project. Contact me by email or leave me a message on [slack](https://join.slack.com/t/bowphp/shared_invite/enQtNzMxOTQ0MTM2ODM5LTQ3MWQ3Mzc1NDFiNDYxMTAyNzBkNDJlMTgwNDJjM2QyMzA2YTk4NDYyN2NiMzM0YTZmNjU1YjBhNmJjZThiM2Q)**

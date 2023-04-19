@@ -1,20 +1,20 @@
 <!-- Standard SEO -->
-#if(isset($title))
+%isset($title)
     <title>{{ $title }}</title>
-#endif
+%endisset
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="referrer" content="{{ !empty($referrer) ? $referrer : config('meta.referrer') }}">
 <meta name="robots" content="{{ !empty($robots) ? $robots : config('meta.robots') }}">
 <meta name="description" content="{{ !empty($description) ? $description : config('meta.description') }}">
 <meta name="keywords" content="{{ !empty($keywords) ? $keywords : config('meta.keywords') }}">
-#if(config('meta.geo_region') !== '')
+%if(config('meta.geo_region') !== '')
 <meta name="geo.region" content="{{ config('meta.geo_region') }}">
-#endif
+%endif
 
-#if(config('meta.geo_position') !== '')
+%if(config('meta.geo_position') !== '')
 <meta name="geo.position" content="{{ config('meta.geo_position') }}">
 <meta name="ICBM" content="{{ config('meta.geo_position') }}">
-#endif
+%endif
 <meta name="geo.placename" content="{{ config('app.name') }}">
 
 <!-- Dublin Core basic info -->
@@ -39,17 +39,17 @@
 <meta property="og:image" content="{{ !empty($image) ? $image : config('meta.image') }}">
 <meta property="og:site_name" content="{{ config('app.name') }}">
 
-#if(config('meta.fb_app_id') !== '')
+%if(config('meta.fb_app_id') !== '')
 <meta property="fb:app_id" content="{{ config('meta.fb_app_id') }}"/>
-#endif
+%endif
 
 <!-- Twitter Card -->
-#if(config('meta.twitter_card') !== '')
+%if(config('meta.twitter_card') !== '')
 <meta name="twitter:card" content="{{ !empty($twitter_card) ? $twitter_card : config('meta.twitter_card') }}">
-#endif
-#if(config('meta.twitter_site') !== '' || !empty($twitter_site))
+%endif
+%if(config('meta.twitter_site') !== '' || !empty($twitter_site))
 <meta name="twitter:site" content="{{ !empty($twitter_site) ? $twitter_site : config('meta.twitter_site') }}">
-#endif
+%endif
 <meta name="twitter:title" content="{{ !empty($title) ? $title : config('meta.title') }}">
 <meta name="twitter:description" content="{{ !empty($description) ? $description : config('meta.description') }}">
 <meta name="twitter:image" content="{{ !empty($image) ? $image : config('meta.image') }}">

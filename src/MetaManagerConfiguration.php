@@ -26,9 +26,8 @@ class MetaManagerConfiguration extends Configuration
         /**@var Tintin */
         $template = View::getInstance()->getTemplate();
 
-        $template->directive('meta', function(array $attribues) use ($tempate) {
-            $data = $attribues[0] ?? [];
-            return $tempate->renderString(file_get_contents(__DIR__.'/views/meta.tintin.php'), $data);
+        $template->directive('meta', function(array $attribute) use ($tempate) {
+            return $tempate->renderString(file_get_contents(__DIR__.'/views/meta.tintin.php'), $attribute);
         });
     }
 
