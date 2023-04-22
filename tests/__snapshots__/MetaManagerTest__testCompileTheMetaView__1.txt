@@ -1,0 +1,50 @@
+<!-- Standard SEO -->
+<?php if (isset($title) ): ?>
+    <title><?php echo htmlspecialchars($title, ENT_QUOTES); ?></title>
+<?php endif; ?>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="referrer" content="<?php echo htmlspecialchars(!empty($referrer) ? $referrer : config('meta.referrer'), ENT_QUOTES); ?>">
+<meta name="robots" content="<?php echo htmlspecialchars(!empty($robots) ? $robots : config('meta.robots'), ENT_QUOTES); ?>">
+<meta name="description" content="<?php echo htmlspecialchars(!empty($description) ? $description : config('meta.description'), ENT_QUOTES); ?>">
+<meta name="keywords" content="<?php echo htmlspecialchars(!empty($keywords) ? $keywords : config('meta.keywords'), ENT_QUOTES); ?>">
+<?php if (config('meta.geo_region') !== ''): ?>
+<meta name="geo.region" content="<?php echo htmlspecialchars(config('meta.geo_region'), ENT_QUOTES); ?>">
+<?php endif; ?>
+<?php if (config('meta.geo_position') !== ''): ?>
+<meta name="geo.position" content="<?php echo htmlspecialchars(config('meta.geo_position'), ENT_QUOTES); ?>">
+<meta name="ICBM" content="<?php echo htmlspecialchars(config('meta.geo_position'), ENT_QUOTES); ?>">
+<?php endif; ?>
+<meta name="geo.placename" content="<?php echo htmlspecialchars(config('app.name'), ENT_QUOTES); ?>">
+<!-- Dublin Core basic info -->
+<meta name="dcterms.Format" content="text/html">
+<meta name="dcterms.Language" content="<?php echo htmlspecialchars(config('app.locale'), ENT_QUOTES); ?>">
+<meta name="dcterms.Identifier" content="<?php echo htmlspecialchars(url(), ENT_QUOTES); ?>">
+<meta name="dcterms.Relation" content="<?php echo htmlspecialchars(config('app.name'), ENT_QUOTES); ?>">
+<meta name="dcterms.Publisher" content="<?php echo htmlspecialchars(config('app.name'), ENT_QUOTES); ?>">
+<meta name="dcterms.Type" content="text/html">
+<meta name="dcterms.Coverage" content="<?php echo htmlspecialchars(url(), ENT_QUOTES); ?>">
+<meta name="dcterms.Title" content="<?php echo htmlspecialchars(!empty($title) ? $title : config('meta.title'), ENT_QUOTES); ?>">
+<meta name="dcterms.Subject" content="<?php echo htmlspecialchars(!empty($keywords) ? $keywords : config('meta.keywords'), ENT_QUOTES); ?>">
+<meta name="dcterms.Contributor" content="<?php echo htmlspecialchars(!empty($author) ? $author : config('meta.author'), ENT_QUOTES); ?>">
+<meta name="dcterms.Description" content="<?php echo htmlspecialchars(!empty($description) ? $description : config('meta.description'), ENT_QUOTES); ?>">
+<!-- Facebook OpenGraph -->
+<meta property="og:locale" content="<?php echo htmlspecialchars(config('app.locale'), ENT_QUOTES); ?>">
+<meta property="og:type" content="<?php echo htmlspecialchars(!empty($type) ? $type : config('meta.type'), ENT_QUOTES); ?>">
+<meta property="og:url" content="<?php echo htmlspecialchars(url(), ENT_QUOTES); ?>">
+<meta property="og:title" content="<?php echo htmlspecialchars(!empty($title) ? $title : config('meta.title'), ENT_QUOTES); ?>">
+<meta property="og:description" content="<?php echo htmlspecialchars(!empty($description) ? $description : config('meta.description'), ENT_QUOTES); ?>">
+<meta property="og:image" content="<?php echo htmlspecialchars(!empty($image) ? $image : config('meta.image'), ENT_QUOTES); ?>">
+<meta property="og:site_name" content="<?php echo htmlspecialchars(config('app.name'), ENT_QUOTES); ?>">
+<?php if (config('meta.fb_app_id') !== ''): ?>
+<meta property="fb:app_id" content="<?php echo htmlspecialchars(config('meta.fb_app_id'), ENT_QUOTES); ?>"/>
+<?php endif; ?>
+<!-- Twitter Card -->
+<?php if (config('meta.twitter_card') !== ''): ?>
+<meta name="twitter:card" content="<?php echo htmlspecialchars(!empty($twitter_card) ? $twitter_card : config('meta.twitter_card'), ENT_QUOTES); ?>">
+<?php endif; ?>
+<?php if (config('meta.twitter_site') !== '' || !empty($twitter_site)): ?>
+<meta name="twitter:site" content="<?php echo htmlspecialchars(!empty($twitter_site) ? $twitter_site : config('meta.twitter_site'), ENT_QUOTES); ?>">
+<?php endif; ?>
+<meta name="twitter:title" content="<?php echo htmlspecialchars(!empty($title) ? $title : config('meta.title'), ENT_QUOTES); ?>">
+<meta name="twitter:description" content="<?php echo htmlspecialchars(!empty($description) ? $description : config('meta.description'), ENT_QUOTES); ?>">
+<meta name="twitter:image" content="<?php echo htmlspecialchars(!empty($image) ? $image : config('meta.image'), ENT_QUOTES); ?>">
