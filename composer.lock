@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bowphp/tintin.git",
-                "reference": "a7ee7ebedba829907997eac1406fb956f884bc1e"
+                "reference": "1edd1ba9080442c5644b22a49d6d81d18069e840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bowphp/tintin/zipball/a7ee7ebedba829907997eac1406fb956f884bc1e",
-                "reference": "a7ee7ebedba829907997eac1406fb956f884bc1e",
+                "url": "https://api.github.com/repos/bowphp/tintin/zipball/1edd1ba9080442c5644b22a49d6d81d18069e840",
+                "reference": "1edd1ba9080442c5644b22a49d6d81d18069e840",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-22T15:57:53+00:00"
+            "time": "2023-04-22T17:53:07+00:00"
         },
         {
             "name": "fakerphp/faker",
