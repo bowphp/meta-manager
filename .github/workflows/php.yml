@@ -13,9 +13,19 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [8.1, 8.2, 8.3, 8.4]
+        os: [ubuntu-latest]
 
     steps:
     - uses: actions/checkout@v3
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, mysql, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick, redis
+        coverage: none
 
     - name: Cache Composer packages
       id: composer-cache
