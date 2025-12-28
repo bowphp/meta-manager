@@ -5,14 +5,14 @@ namespace Bow\MetaManager;
 use Bow\View\View;
 use Tintin\Tintin;
 use Bow\Configuration\Configuration;
-use Bow\Configuration\Loader as Config;
+use Bow\Configuration\Loader as ApplicationConfigurationLoader;
 
 class MetaManagerConfiguration extends Configuration
 {
     /**
      * @inheritDoc
      */
-    public function create(Config $config): void
+    public function create(ApplicationConfigurationLoader $config): void
     {
         $meta = (array) $config['meta'];
 
@@ -33,7 +33,7 @@ class MetaManagerConfiguration extends Configuration
         $tintin = View::getInstance()->getEngine();
 
         if (!$tintin instanceof Tintin) {
-            throw new \ErrorException("Please use bowphp/tintin as the default view engine");
+            throw new MetaManagerException("Please use bowphp/tintin as the default view engine");
         }
 
         $tintin->directive('meta', function (array $attribute = []) use ($tintin) {
